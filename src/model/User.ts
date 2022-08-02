@@ -73,6 +73,10 @@ export class User {
   @prop({ required: true })
   public password!: string;
 
+  @Field(() => Number)
+  @prop({ required: true })
+  public phoneNumber: number;
+
   @Field(() => Date)
   @prop({ type: () => Date, default: () => Date.now() })
   public createdAt?: number;
